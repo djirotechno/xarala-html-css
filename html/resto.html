@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Budget</title>
+</head>
+<body>
+    <div class="top-title">
+        <h1>GESTION BUDGET</h1>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <h3>Revenues</h3>
+        <hr>
+        <div class="budget">
+            <div class="budget-items">
+                <h3>Budget</h3>
+                <div class="budget-items-val">
+                    10000
+                </div>
+            </div>
+            <div class="budget-items">
+                <h3>Depense</h3>
+                <div class="budget-items-val">
+                    10000
+                </div>
+            </div>
+            <div class="budget-items">
+                <h3>Solde</h3>
+                <div class="budget-items-val">
+                    10000
+                </div>
+            </div>
+        </div>
+        <div class="budget-table">
+            <div class="budget-btn">
+                <button class="openModal-rev" id="openModal">Ajouter revenue</button>
+            </div>
+            <table id="table1">
+                  <tr>
+                    <td>Titre</td>
+                    <td>Montant</td>
+                    <td>Action</td>
+                  </tr>
+            </table>
+        </div>
+        <hr>
+        <br>
+    </div>
+<!-- composant Modal -->
+    <div class="modal" id="modal-rev">
+        <div class="modal-content">
+            <span class="close-button-rev">&times;</span> 
+            <form id="form">
+                <input type="text" id="titre1" name="titre1" placeholder="Titre"><br><br>
+                <input type="number" id="montant1" name="montant1" placeholder="Montant"><br><br>
+            </form>
+            <button   onclick="submit1()">ok</button>
+        
+        </div>
+    </div> 
+</body>
+</html>
+
+<!-- script -->
+<script src="/js/revenu.js"></script>  
